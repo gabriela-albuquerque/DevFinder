@@ -4,15 +4,16 @@ type SearchProps = {
 
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
+import classes from "./Search.module.css";
 
 const Search = ({ loadUser }: SearchProps) => {
   const [userName, setUserName] = useState("");
 
   return (
-    <div>
+    <div className={classes.search}>
       <h2>Encontre um usuário:</h2>
       <p>E conheça seus repositórios com mais estrelas</p>
-      <div>
+      <div className={classes.search_container}>
         <input
           type="text"
           placeholder="Digite o nome do usuário"

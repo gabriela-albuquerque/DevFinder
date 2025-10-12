@@ -9,7 +9,7 @@ import classes from "./Search.module.css";
 const Search = ({ loadUser }: SearchProps) => {
   const [userName, setUserName] = useState("");
 
-  const handleKeyDown = (e: KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       loadUser(userName);
     }

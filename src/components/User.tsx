@@ -1,6 +1,7 @@
 import { MdLocationPin } from "react-icons/md";
 import type { UserProps } from "../types/user";
 import { Link } from "react-router-dom";
+import { FaUsers } from "react-icons/fa";
 
 const User = ({
   login,
@@ -21,6 +22,7 @@ const User = ({
       )}
       <div>
         <div>
+          <FaUsers />
           <p>Seguidores:</p>
           <p>{followers}</p>
         </div>

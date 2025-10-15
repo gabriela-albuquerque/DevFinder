@@ -86,12 +86,18 @@ Siga os passos abaixo para executar o projeto em seu ambiente local:
 
 O desenvolvimento do DevFinder foi uma excelente oportunidade para aprofundar e praticar conceitos essenciais do desenvolvimento Frontend moderno:
 
-- **Consumo de APIs**: Implementei a lógica de requisições assíncronas à API do GitHub, gerenciando estados de `loading`, `success` e `error` para fornecer um feedback claro ao usuário.
+- **Consumo de APIs**: Implementei a lógica de requisições assíncronas à API do GitHub.
 - **Tipagem com TypeScript**: A decisão de usar TypeScript foi estratégica no intuito de evitar bugs comuns e deixar o código mais legível e a funcionalidade de autocompletar do editor mais inteligente.
 - **Componentização e Reutilização**: A interface foi dividida em componentes lógicos e reutilizáveis, como `Search` e `User`, seguindo os princípios do React para um código limpo e de fácil manutenção.
 - **Gerenciamento de Estado**: Explorei o uso de hooks do React, como `useState` e `useEffect`, para controlar o estado da aplicação de forma eficiente e reativa.
 
 Este projeto reflete minha paixão por criar soluções de software de alta qualidade, com código bem estruturado e foco na experiência do usuário.
+
+---
+
+## Link para o deploy
+
+https://dev-finder-ten-alpha.vercel.app/
 
 ---
 

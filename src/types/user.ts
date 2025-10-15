@@ -4,4 +4,7 @@ export type UserProps = {
   location: string;
   followers: number;
   following: number;
+  public_repos: number;
+  bio: string;
+  html_url: string;
 };

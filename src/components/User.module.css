@@ -20,7 +20,6 @@
 .stats {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
 }
 
 .location svg,
@@ -38,14 +37,16 @@
   padding: 0 1rem;
 }
 
-.stats div:first-child {
+.stats div:nth-child(2) {
   border-right: 1px solid #9da5d1;
+  border-left: 1px solid #9da5d1;
 }
 
 .stats .number {
   background-color: #4ed8c7;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
+  margin-top: 0.5rem;
 }
 
 .user a {

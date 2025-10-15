@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 import classes from "./User.module.css";
 
 const User = ({
-  login,
   avatar_url,
+  login,
+  location,
   followers,
   following,
-  location,
+  public_repos,
+  bio,
+  html_url,
 }: UserProps) => {
   return (
     <div className={classes.user}>
@@ -29,8 +32,17 @@ const User = ({
           <p>Seguindo:</p>
           <p className={classes.number}>{following}</p>
         </div>
+        <div>
+          <p>Repositórios:</p>
+          <p className={classes.number}>{public_repos}</p>
+        </div>
       </div>
-      <Link to={`/repos/${login}`}>Projetos com mais estrelas</Link>
+      <div>
+        <p>{bio || "Este usuário não possui bio."}</p>
+      </div>
+      <Link to={html_url} target="_blank">
+        Acesse o perfil
+      </Link>
     </div>
   );
 };
